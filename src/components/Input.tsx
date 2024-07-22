@@ -19,13 +19,13 @@ export const Input = () => {
     debouncedSearch
   );
 
-  if (loading) {
+  const renderLoading = () => {
     return (
-      <div className='absolute bg-darkGray w-full h-64 z-20 mt-1.5 rounded-md'>
+      <div className='absolute bg-darkGray w-full h-32 z-20 mt-1.5 rounded-md'>
         <LoadingSearch />
       </div>
     );
-  }
+  };
 
   const renderTitle = (item: Multi) => {
     if ('title' in item) {
@@ -84,6 +84,7 @@ export const Input = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
+      {loading && search != '' && renderLoading()}
       {data?.results != null && search !== '' && (
         <ul className='absolute bg-darkGray w-full h-auto z-20 mt-1.5 rounded-md'>
           {data?.results.slice(0, 4).map((item) => renderItem(item))}
