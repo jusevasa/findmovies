@@ -1,0 +1,16 @@
+:root {
+  --color-black: rgba(0, 0, 0, 1);
+  --color-gray-900: rgba(33, 33, 33, 1);
+  --color-gray-100: rgba(245, 245, 245, 1);
+  --color-gray-100-60: rgba(245, 245, 245, 0.6);
+  --color-gray-100-36: rgba(245, 245, 245, 0.36);
+  --color-gray-100-16: rgba(245, 245, 245, 0.16);
+  --color-yellow-600: rgba(253, 216, 53, 1);
+  --color-yellow-700: rgba(255, 235, 59, 1);
+  --yellow-gradient: linear-gradient(130.29deg, #ffee58 0%, #ff8f00 104.33%);
+  --color-white: #fff;
+}
+
+html {
+  background: var(--color-black);
+}
