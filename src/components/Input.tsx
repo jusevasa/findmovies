@@ -5,6 +5,7 @@ import { getAllMulti } from '@/services/multi';
 import { Search } from './icons/Search';
 import SearchResults from './SearchResults';
 import { Multi } from '@/types/multi';
+import { Close } from './icons/Close';
 
 export const Input = () => {
   const [search, setSearch] = useState('');
@@ -48,6 +49,14 @@ export const Input = () => {
           onChange={(e) => setSearch(e.target.value)}
           onFocus={handleFocus}
         />
+        {search != '' && (
+          <div className='pr-1' onClick={() => {
+            setSearch('')
+            setIsFocused(false);
+          }}>
+            <Close />
+          </div>
+        )}
       </div>
       {isFocused && (
         <SearchResults
