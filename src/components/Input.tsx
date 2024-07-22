@@ -27,6 +27,14 @@ export const Input = () => {
     );
   };
 
+  const renderNotFound = (value: string) => {
+    return (
+      <div className='absolute bg-darkGray w-full z-20 mt-1.5 rounded-md text-white flex items-center py-6 px-2'>
+        {`No results found for “${value}” phrase.`}
+      </div>
+    );
+  };
+
   const renderTitle = (item: Multi) => {
     if ('title' in item) {
       return item.title;
@@ -85,6 +93,10 @@ export const Input = () => {
         />
       </div>
       {loading && search != '' && renderLoading()}
+      {search != '' &&
+        data?.results.length === 0 &&
+        !loading &&
+        renderNotFound(search)}
       {data?.results != null && search !== '' && (
         <ul className='absolute bg-darkGray w-full h-auto z-20 mt-1.5 rounded-md'>
           {data?.results.slice(0, 4).map((item) => renderItem(item))}
