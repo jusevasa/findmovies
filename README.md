@@ -1,30 +1,14 @@
-# React + TypeScript + Vite
+# Bienvenidos a mi aplicación de búsqueda de películas y series.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En esta plataforma, podrás encontrar información detallada sobre tus películas y series favoritas. La aplicación permite navegar fácilmente por diferentes categorías y descubrir nuevos títulos que podrían interesarte. Cada película y serie cuenta con una página de detalles que proporciona toda la información que necesitas.
 
-Currently, two official plugins are available:
+LINK: https://findmovies-bwz8-js4qh4s5q.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+![image](https://github.com/user-attachments/assets/480ccf61-12ed-41c7-9290-5818f226547f)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Nota del Desarrollador
+He disfrutado mucho trabajando en este proyecto. Aunque tuve limitaciones de tiempo debido a mi carga laboral, hice uso de un framework de CSS para agilizar el proceso de desarrollo. A pesar de que hay áreas que podrían mejorarse, mi enfoque principal fue cumplir con los criterios de aceptación y entregar un producto funcional. Estoy orgulloso del resultado y espero que disfrutes explorando la aplicación tanto como yo disfruté creándola.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+¡Gracias por probar la aplicación y espero que encuentres la información que buscas de manera rápida y sencilla!
